@@ -1,0 +1,15 @@
+server {
+	listen 80;
+	listen [::]:80;
+
+	root /home/jack/www/jacrdn.com;
+
+	index index.html;
+
+	server_name jacrdn.com www.jacrdn.com;
+
+	location / {
+		autoindex on;
+		try_files $uri $uri/ =404;
+	}
+}
