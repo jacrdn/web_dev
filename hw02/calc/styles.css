@@ -49,7 +49,10 @@
     max-width: 160px;
 }
 
-/* setting the output number */
+/* setting the output number (if it's too large for the calculator to display),
+* it will break and go down one line, this just seemed to make the most sense
+* given the assignment instructions
+* */
 .out > .curr-num {
     color: black;
     font-size: 28px;
